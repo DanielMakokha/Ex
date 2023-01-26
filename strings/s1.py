@@ -29,17 +29,16 @@ print(string[:3])
 
 # The string backwards
 # print(string[])
-user_input = input("Please enter a string: ")
-print("The string backwards is: " + user_input[::-1])
+
+print("The string backwards is: " + string[::-1])
 
 
 # The seventh character of the string if the string is long enough and a message otherwise
-user_input = input("Please enter a string: ")
-if len(user_input) >= 7:
-    print("The seventh character of the string is: " + user_input[6])
+
+if len(string) >= 7:
+    print("The seventh character of the string is: " + string[6])
 else:
     print("The string is not long enough.")
-
     
 
 # The string with its first and last characters removed
@@ -49,8 +48,13 @@ print(string[1:-1])
 print(string.upper())
 
 # The string with every a replaced with an e
-original_string = input("Enter a string: ")
-modified_string = original_string.replace("a", "e")
+
+modified_string = string.replace("a", "e")
 print("Modified string: ", modified_string)
+
+#The string with every letter replaced with space
+for c in string:
+    modified_string2=string.replace(c," ") 
+print(modified_string2)
 
     
